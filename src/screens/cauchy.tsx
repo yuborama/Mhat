@@ -8,6 +8,7 @@ import { useFormik } from 'formik';
 import MoleculeLoaderScreen from '~/components/@molecules/MoleculeLoaderScreen';
 import * as Yup from 'yup';
 import { ScrollView } from 'react-native';
+import MathJax from 'react-native-mathjax';
 enum Operator {
   ADD = '+',
   SUBTRACT = '-',
@@ -151,6 +152,7 @@ const Cauchi: FCN = () => {
     },
   });
   //   console.log('steps', steps);
+  console.log('steps', run(steps.step5, true).toString());
   return (
     <MoleculeLoaderScreen loading={loading}>
       <AtomView
@@ -169,7 +171,7 @@ const Cauchi: FCN = () => {
               padding: 10px 20px;
             `}
           >
-            <AtomInput id="fx" placeholder='hola' label="funcion" formik={formik} />
+            <AtomInput id="fx" placeholder="hola" label="funcion" formik={formik} />
             <AtomView
               css={() => css`
                 align-items: flex-end;
@@ -190,6 +192,7 @@ const Cauchi: FCN = () => {
               </AtomButton>
             </AtomView>
           </AtomView>
+          <MathJax html={'Solve the equation $6*j*x*y+3*x^2-3*y^2,$$6jxy+3x^2-3y^2$$$'} />
           {steps.step1 && (
             <AtomView
               css={() => css`
