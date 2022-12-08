@@ -1,0 +1,37 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "assets/*": ["assets/*"],
+      "~/*": ["src/*"],
+      "~apollo/*": ["src/apollo/*"],
+      "~components/*": ["src/components/*"],
+      "~atoms/*": ["src/constants/@atoms/*"],
+      "~molecules/*": ["src/constants/@molecules/*"],
+      "~organisms/*": ["src/constants/@organisms/*"],
+      "~templates/*": ["src/constants/templates/*"],
+      "~config/*": ["src/config/*"],
+      "~hooks/*": ["src/hooks/*"],
+      "~jotai/*": ["src/jotai/*"],
+      "~layouts/*": ["src/layouts/*"],
+      "~screens/*": ["src/screens/*"],
+      "~themes/*": ["src/themes/*"],
+      "~types/*": ["src/types/*"],
+      "~utils/*": ["src/utils/*"]
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": ["index.d.ts", "**/*.d.ts", "**/*.ts", "**/*.tsx", "index.js"]
+}
