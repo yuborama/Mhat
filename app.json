@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "boilerplate",
-    "slug": "boilerplate",
+    "name": "DERIVATy",
+    "slug": "DERIVATy",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -9,8 +9,8 @@
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#f9f9f9"
+      "resizeMode": "cover",
+      "backgroundColor": "#f02a2a"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -20,7 +20,7 @@
     "ios": {
       "supportsTablet": true,
       "bitcode": false,
-      "bundleIdentifier": "com.ixulabs.boilerplate"
+      "bundleIdentifier": "com.ixulabs.DERIVATy"
     },
     "android": {
       "adaptiveIcon": {
@@ -45,7 +45,7 @@
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "android.permission.READ_EXTERNAL_STORAGE"
       ],
-      "package": "ios.ixulabs.boilerplate"
+      "package": "ios.ixulabs.DERIVATy"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"

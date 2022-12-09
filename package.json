@@ -4,7 +4,7 @@
   "scripts": {
     "start": "expo start --dev-client",
     "clean": "expo start --clear",
-    "android": "expo start --android",
+    "android": "expo run:android",
     "appandroid": "expo run:android",
     "ios": "expo run:ios",
     "appios": "expo run:ios",

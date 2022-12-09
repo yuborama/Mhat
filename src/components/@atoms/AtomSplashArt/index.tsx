@@ -5,7 +5,7 @@ import { Image } from 'react-native';
 import { css } from 'styled-components';
 import { SplashArtAtom } from '~/jotai/splashArt';
 
-import SplashArtImage from 'assets/images/icon.png';
+import SplashArtImage from 'assets/images/adaptive-icon.png';
 import SplashArtAnimation from 'assets/lotties/splash-loading.json';
 import { CustomizeAtom } from '~/jotai/customize';
 import AtomView from '../AtomView';
@@ -31,7 +31,7 @@ const AtomSplashArt: FC<Props> = (props) => {
         `}
       >
         <Image
-          style={{ width: 300, height: 100, marginBottom: 30, marginTop: 30 }}
+          style={{ width: 300, height: 300, marginBottom: 30, marginTop: 30 }}
           source={SplashArtImage}
         />
         <Lottie
